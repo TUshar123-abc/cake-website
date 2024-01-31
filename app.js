@@ -31,7 +31,7 @@ app.use("/attendence", AttendenceRoutes);
 app.use("/api", contactRoutes);
 
 app.use(
-  express.static(path.join(fileURLToPath(import.meta.url), "./dharma/build"))
+  express.static(path.join(fileURLToPath(import.meta.url), "./frontend/build"))
 );
 //Static files serving
 const __filename = fileURLToPath(import.meta.url);
